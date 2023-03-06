@@ -1,4 +1,4 @@
-module github.com/veteran-dev/veteran/model
+module github.com/veteran-dev/model
 
 go 1.18
 
