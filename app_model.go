@@ -7,5 +7,7 @@ type App struct {
 	Name   string
 	Credit uint
 	Status bool
+	Pid    int
+	Plans  []App
 	gorm.Model
 }
