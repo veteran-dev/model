@@ -4,9 +4,9 @@ import "time"
 
 type AccoutLoginLog struct {
 	ID           uint `gorm:"primaryKey"`
-	StatusCode   int
+	StatusCode   int  `gorm:"default:200"`
 	StatusReason string
-	AccountID    int
+	AccountID    int `gorm:"default:0"`
 	IPAddress    string
 	Browser      string
 	OS           string
