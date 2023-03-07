@@ -8,7 +8,7 @@ type Account struct {
 	Email          string `gorm:"uniqueIndex:idx_email,sort:desc"`
 	Status         int8   `gorm:"default:0"`
 	Region         string `gorm:"default:'未知'"`
-	AccountService []AccountService
+	AccountService []AccountPlan
 	AccoutLoginLog []AccoutLoginLog
 	gorm.Model
 }
