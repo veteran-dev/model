@@ -2,12 +2,13 @@ package model
 
 import "gorm.io/gorm"
 
+//账号服务表
 type AccountService struct {
 	AccountID uint
-	ServiceID uint
-	AppID     string `gorm:"uniqueIndex"`
+	PlanID    uint
+	AppID     int `gorm:"uniqueIndex,autoIncrement:10000"`
 	AppSecret string
 	Credit    int
-	Service   App
+	Plan      Plan
 	gorm.Model
 }
