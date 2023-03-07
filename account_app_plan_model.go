@@ -3,7 +3,7 @@ package model
 import "gorm.io/gorm"
 
 //账号服务表
-type AccountPlan struct {
+type AccountAppPlan struct {
 	AccountID     uint `gorm:"default:0"`
 	AppPlanID     uint `gorm:"default:0"`
 	AppID         int  `gorm:"uniqueIndex,autoIncrement:10000"`
